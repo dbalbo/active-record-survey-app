@@ -1,0 +1,15 @@
+<h1>Survey Biotches</h1>
+
+<p><h2>Here are some questions</h2></p>
+
+  <% @questions.each() do |question| %>
+    <li><%= question.name %> <a href="/questions/<%= question.id() %>/edit">Update or add more questions</a></li>
+    <% end %>
+
+    <h3> Add another question? </h3>
+    <form action="/" method="post">
+      <label for="epicodus survey"> How it is? </label>
+      <input id="epicodus" name="epicodus">
+
+      <button type="submit">Add New Question</button>
+    </form>

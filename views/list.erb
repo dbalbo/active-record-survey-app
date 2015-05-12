@@ -1,0 +1,24 @@
+<h3>Your questions for <%= @survey %> </h3>
+
+<p>Add a new question:</p>
+
+<form action="/view_list/<%= @id %>" method="post">
+
+  <label for="name">Question</label>
+  <input id="name" name="name" type="text">
+
+  <button type="submit">Add Question</button>
+</form>
+
+<!-- <h1>Current Questions:</h1>
+<% if @questions.any?() %>
+<ol>
+  <% @questions.each() do |question| %>
+  <% if question.survey.name = @name %>
+  <li><%= question.name() %></li>
+  <% end %>
+  <% end %>
+</ol>
+<% end %>
+
+<a href="/">Back</a> -->
